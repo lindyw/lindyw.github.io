@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Witch Hunter - A Project of CS4386 AI Game Programming</title>
+		<meta charset="utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+			html,
+			body { border: 0; padding: 0; }
+			a { color: #fff; text-decoration: none; }
+			body { background-color: #000; color: #fff; font-family: 'Mountains of Christmas', cursive; }
+			#game-screen { background-color: #fff; display: block; height: 700px; margin: auto; width: 1000px; }
+			#game-stats { background-color: #000; display: none; font-size: 18pt; left: -300px; margin: auto; margin-top: -46px; opacity: 0.5; padding-left: 10px; position: relative;
+				top: 50px; width: 400px; }
+			#hp { color: #78f26b; display: inline-block; font-size: 24pt; height: 30px; width: 80px; }
+			#hp-bar { background-color: #78f26b; display: inline-block; height: 30px; margin-left: 10px; margin-top: 8px; transform: skew(-30deg); width: 200px;
+				-moz-transform: skew(-30deg); -webkit-transform: skew(-30deg); }
+			#ingame-html { border-radius: 8px; display: none; height: 700px; margin: auto; position: relative; top: -700px; width: 1000px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
+			#mute-sound { bottom: 0; height: 25px; position: fixed; right: 0; width: 50px; }
+		</style>
+	</head>
+	
+	<body>
+		<!-- Game Statistics -->
+		<div id="game-stats">
+			<div id="player-hp">
+				HP: <div id="hp"></div>
+				<div id="hp-bar"></div>
+			</div>
+		</div>
+		<canvas id="game-screen"></canvas>
+		<div id="ingame-html"></div>
+		<div id="mute-sound">
+			<a href="javascript: mute();"><span id="mute">Mute</span></a>
+		</div>
+		
+		<!-- Game Settings -->
+		<script src="settings.js"></script>
+		<!-- Helpers -->
+		<script src="helpers.js"></script>
+		<!-- Classes -->
+		<script src="classes.js"></script>
+		<!-- Stage Files -->
+		<script src="stages/start.js"></script>
+		<script src="stages/stage-tutorial.js"></script>
+		<script src="stages/stage-game-over.js"></script>
+		<script src="stages/stage-complete.js"></script>
+		<script src="stages/upgrade.js"></script>
+		<script src="stages/village-begin.js"></script>
+		<script src="stages/stage-one.js"></script>
+		<script src="stages/stage-two.js"></script>
+		<script src="stages/stage-three.js"></script>
+		<script src="stages/stage-before-boss.js"></script>
+		<script src="stages/stage-four.js"></script>
+		<script src="stages/stage-after-boss.js"></script>
+		<!-- Core -->
+		<script src="core.js"></script>
+	</body>
+</html>
